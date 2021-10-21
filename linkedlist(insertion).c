@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+// A link list is a collection of nodes, where each previous node contain next node address.
+// A node is a collection of two parts data and link.
 
 typedef struct linkedlist
 {
@@ -10,9 +12,9 @@ typedef struct linkedlist
 }node;
 
 void createLinkedlist(node *ptr){
-    int x;
+    int x;      //variable declaration
     char choice;
-    node *temp;
+    node *temp; 
     int count=1;
     do
     {
@@ -112,9 +114,9 @@ void display(node *ptr){
 
 }
 
-int main(){
+int main(void){
     node *head;
-    int position;
+    int position; // variable declaration
     head=(node *)malloc(sizeof(node));
     createLinkedlist(head);
     printf("After creating the linkedlist\n");
